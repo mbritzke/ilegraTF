@@ -14,11 +14,11 @@ acumulativos).
  -- Durante a venda de remédios Quimioterápicos, se um dos remédios for do tipo controlado (que exige apresentação de receita para a compra), o sistema deverá emitir um alerta ao atendente questionando se o mesmo verificou a receita do respectivo remédio (deverá ser informado no alerta o nome do remédio controlado).
 
 Impressão de relatórios:
- o Listagem de clientes cadastrados, por nome, em ordem alfabética crescente (A-Z), especificando os dados do cliente;
- o Listagem por tipo de clientes atendidos (idosos, clientes de convênios/planos de saúde e outros).
- o Listagem de medicamentos por ordem alfabética;
- o Listagem dos medicamentos Quimioterápicos ou Fitoterápicos;
- o Estatística (exibidas em percentual) dos atendimentos realizados ao final do dia:
+-- Listagem de clientes cadastrados, por nome, em ordem alfabética crescente (A-Z), especificando os dados do cliente;
+-- Listagem por tipo de clientes atendidos (idosos, clientes de convênios/planos de saúde e outros).
+-- Listagem de medicamentos por ordem alfabética;
+-- Listagem dos medicamentos Quimioterápicos ou Fitoterápicos;
+-- Estatística (exibidas em percentual) dos atendimentos realizados ao final do dia:
    a) Tipos de clientes (idosos ou não);
    b) Remédio mais vendido;
    c) Quimioterápicos ou Fitoterápicos.
