@@ -12,7 +12,7 @@ A Farmácia precisa dos seguintes serviços (você deverá disponibilizar essas 
  6) O cliente pode na hora da compra, optar por pagar com dinheiro/cartão ou pontos. Caso ele opte por pagar com pontos, o número de pontos total do cliente deverá corresponder a um valor maior ou igual ao total da venda.
  7) Durante a venda de remédios Quimioterápicos, se um dos remédios for do tipo controlado (que exige apresentação de receita para a compra), o sistema deverá emitir um alerta ao atendente questionando se o mesmo verificou a receita do respectivo remédio (deverá ser informado no alerta o nome do remédio controlado).
 
-*Impressão de relatórios:
+Impressão de relatórios:
  1) Listagem de clientes cadastrados, por nome, em ordem alfabética crescente (A-Z), especificando os dados do cliente;
  2) Listagem por tipo de clientes atendidos (idosos, clientes de convênios/planos de saúde e outros).
  3) Listagem de medicamentos por ordem alfabética;
@@ -23,3 +23,8 @@ A Farmácia precisa dos seguintes serviços (você deverá disponibilizar essas 
    5.3) Quimioterápicos ou Fitoterápicos.
    
 - Enunciado adaptado referente ao trabalho final de semestre na disciplina de Algoritmos e Programação I, ofertada na Faculdade de Informática ministrada pela Professora Lucia Giraffa na Pontifícia Universidade Católica do Rio Grande do Sul.
+
+- Tecnologias
+   - Java 8
+   - Gradle
+   - Git
