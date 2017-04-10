@@ -18,10 +18,9 @@ Impressão de relatórios:
  3) Listagem de medicamentos por ordem alfabética;
  4) Listagem dos medicamentos Quimioterápicos ou Fitoterápicos;
  5) Estatística (exibidas em percentual) dos atendimentos realizados ao final do dia:
-   
-   5.1) Tipos de clientes (idosos ou não);
-   5.2) Remédio mais vendido;
-   5.3) Quimioterápicos ou Fitoterápicos.
+    5.1) Tipos de clientes (idosos ou não);
+    5.2) Remédio mais vendido;
+    5.3) Quimioterápicos ou Fitoterápicos.
    
 - Enunciado adaptado referente ao trabalho final de semestre na disciplina de Algoritmos e Programação I, ofertada na Faculdade de Informática ministrada pela Professora Lucia Giraffa na Pontifícia Universidade Católica do Rio Grande do Sul.
 
