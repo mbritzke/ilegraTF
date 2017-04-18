@@ -4,7 +4,7 @@ Trabalho final do programa JTs
 O desafio proposto é o projeto e implementação de uma aplicação para uma Farmácia que faz e-commerce.
 
 A Farmácia precisa dos seguintes serviços (você deverá disponibilizar essas informações, para escolha do usuário, na forma de um Menu):
- 1) Deverá conter um cadastro de cliente, no qual a busca se dará por CPF ou RG.
+ 1) Deverá conter um cadastro de cliente, no qual a busca se dará por CPF.
  2) Deverá conter um cadastro de medicamentos, no qual a busca se dará por nome, fabricante, principal composto, ou descrição parcial de acordo com o tipo de medicamento. Os medicamentos poderão ser Quimioterápicos ou Fitoterápicos. Os medicamentos Quimioterápicos deverão ter a informação sobre se são vendidos apenas mediante receita ou não (exemplo: remédios tarja preta e antibióticos).
  3) Através do sistema deverá ser possível efetuar vendas, e estas se darão APENAS para clientes cadastrados no sistema.
  4) Durante a venda, haverá 20% de desconto para clientes idosos, e 10% de desconto nas compras acima de 150 reais (os descontos não são acumulativos).
