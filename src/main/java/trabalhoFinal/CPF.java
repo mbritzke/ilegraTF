@@ -9,7 +9,7 @@ public class CPF {
 		this.cpf = combinacao;
 	}
 
-	private String getCPF() {
+	public String getCPF() {
 		return cpf;
 	}
 
