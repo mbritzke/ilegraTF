@@ -38,7 +38,7 @@ public class Cliente {
 
 	@Override
 	public String toString() {
-		return "CLIENTE NOME =" + nome + "\nIDADE=" + idade + "\nCPF =" + cpfCliente + "\n";
+		return "CLIENTE NOME =" + nome + "\nIDADE=" + idade + "\nCPF =" + cpfCliente.toString();
 	}	
 
 }

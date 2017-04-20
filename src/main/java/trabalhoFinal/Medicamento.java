@@ -11,13 +11,10 @@ public class Medicamento {
 		this.nome = nome;
 		this.fabricante = fabricante;
 		this.compostoPrincipal = compostoPrincipal;
-		this.descricao = "Sem descricao";
 	}
 
 	public Medicamento(String nome, String fabricante, String compostoPrincipal, String descricao) {
-		this.nome = nome;
-		this.fabricante = fabricante;
-		this.compostoPrincipal = compostoPrincipal;
+		this(nome, fabricante, compostoPrincipal);
 		this.descricao = descricao;
 	}
 

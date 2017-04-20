@@ -22,4 +22,5 @@ public class MedicamentoQuimio extends Medicamento {
 	public boolean getReceita() {
 		return receita;
 	}
+
 }

@@ -13,11 +13,6 @@ public class CPF {
 		return cpf;
 	}
 
-	@Override
-	public String toString() {
-		return "CPF: " + cpf + "\n";
-	}
-
 	private int calcularDigito(String str, int[] peso) {
 		int soma = 0;
 		for (int indice = str.length() - 1, digito; indice >= 0; indice--) {
@@ -40,5 +35,10 @@ public class CPF {
 		Integer digito1 = calcularDigito(cleanCPF.substring(0, 9), pesoCPF);
 		Integer digito2 = calcularDigito(cleanCPF.substring(0, 9) + digito1, pesoCPF);
 		return cleanCPF.equals(cleanCPF.substring(0, 9) + digito1.toString() + digito2.toString());
+	}
+	
+	@Override
+	public String toString() {
+		return "CPF: " + cpf + "\n";
 	}
 }
