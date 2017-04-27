@@ -1,9 +1,11 @@
 package com.ilegra.ilegraTF.farmacia;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CadastroTest {
 
@@ -18,7 +20,7 @@ public class CadastroTest {
     @Test
     public void cadastroClienteRepetido() {
         Cliente novoCliente = new Cliente("Laura", 76, new CPF("445.161.923-81"));
-        boolean cadastroValido = novoCadastro.cadastroCliente(novoCliente);
+        Assert.assertTrue(novoCadastro.cadastroCliente(novoCliente));
         Assert.assertFalse(novoCadastro.cadastroCliente(novoCliente));
     }
 
@@ -33,4 +35,37 @@ public class CadastroTest {
     public void naoEncontrarCliente(){
         Assert.assertFalse(novoCadastro.pesquisaCliente(new CPF("493.203.845-33")));
     }
+
+    @Test
+    public void listaClientes(){
+        List<Cliente> listaClienteEsperada = new ArrayList<Cliente>();
+        List<Cliente> listaClienteAtual = novoCadastro.retornaListaClientes();
+        Assert.assertSame(listaClienteEsperada, listaClienteEsperada);
+    }
+
+    @Test
+    public void cadastraMedicamento(){
+        Medicamento novoMedicamento = new Medicamento("Bepantol", "Derma Creme", "Dexpantenol");
+        Assert.assertTrue(novoCadastro.cadastraMedicamento(novoMedicamento));
+    }
+
+    @Test
+    public void cadastaMedicamentoRepetido(){
+        Medicamento novoMedicamento = new Medicamento("Nebacetin", "Generico", "Sulfato De Neomicina");
+        Assert.assertTrue(novoCadastro.cadastraMedicamento(novoMedicamento));
+        Assert.assertFalse(novoCadastro.cadastraMedicamento(novoMedicamento));
+    }
+
+    @Test
+    public void pesquisaMedicamento(){
+        Medicamento medicamentoAlvo = new Medicamento("Aspirina", "Bayer", "Acido acetilsalicilico");
+        novoCadastro.cadastraMedicamento(medicamentoAlvo);
+        Assert.assertTrue(novoCadastro.pesquisaMedicamento(medicamentoAlvo));
+    }
+
+    @Test
+    public void naoEncontarMedicamento(){
+        Assert.assertFalse(novoCadastro.pesquisaMedicamento(new Medicamento("Bala Valda", "generico", "menta")));
+    }
+
 }

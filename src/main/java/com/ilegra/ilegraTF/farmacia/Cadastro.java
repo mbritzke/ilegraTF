@@ -4,8 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cadastro {
-    private List<Cliente> listaClientes = new ArrayList<Cliente>();
-    private List<Medicamento> listaMedicamentos = new ArrayList<Medicamento>();
+
+    private List<Cliente> listaClientes;
+    private List<Medicamento> listaMedicamentos;
+
+    public Cadastro() {
+        listaClientes = new ArrayList<Cliente>();
+        listaMedicamentos = new ArrayList<Medicamento>();
+    }
 
     public boolean cadastroCliente(Cliente novoCliente){
         boolean auxiliar = pesquisaCliente(novoCliente.getCpfCliente());
@@ -24,12 +30,20 @@ public class Cadastro {
     }
 
     public List<Cliente> retornaListaClientes(){
-        return listaClientes;
+        return this.listaClientes;
+    }
+
+    public boolean cadastraMedicamento(Medicamento novoMedicamento){
+       boolean auxiliar = pesquisaMedicamento(novoMedicamento);
+       if(auxiliar)
+           return false;
+       listaMedicamentos.add(novoMedicamento);
+       return true;
     }
 
    public boolean pesquisaMedicamento(Medicamento novoMedicamento){
         for(Medicamento auxiliar: listaMedicamentos){
-            if(auxiliar.getNome().equalsIgnoreCase(novoMedicamento.getNome()))
+            if(auxiliar.getNome() == novoMedicamento.getNome())
                 return true;
         }
         return false;
