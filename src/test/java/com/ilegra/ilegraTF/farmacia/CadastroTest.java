@@ -1,7 +1,6 @@
 package com.ilegra.ilegraTF.farmacia;
 
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -37,10 +36,20 @@ public class CadastroTest {
     }
 
     @Test
-    public void listaClientes(){
+    public void listaClientesVazia(){
         List<Cliente> listaClienteEsperada = new ArrayList<Cliente>();
         List<Cliente> listaClienteAtual = novoCadastro.retornaListaClientes();
-        Assert.assertSame(listaClienteEsperada, listaClienteEsperada);
+        Assert.assertEquals(listaClienteEsperada.size(), listaClienteAtual.size());
+    }
+
+    @Test
+    public void listaClientesComDados(){
+        List<Cliente> listaClienteEsperada = new ArrayList<Cliente>();
+        List<Cliente> listaClienteAtual = novoCadastro.retornaListaClientes();
+        Cliente novoBase = new Cliente("Laura", 76, new CPF("445.161.923-81"));
+        listaClienteAtual.add(novoBase);
+        listaClienteEsperada.add(novoBase);
+        Assert.assertSame(listaClienteAtual.size(), listaClienteEsperada.size());
     }
 
     @Test
@@ -68,4 +77,20 @@ public class CadastroTest {
         Assert.assertFalse(novoCadastro.pesquisaMedicamento(new Medicamento("Bala Valda", "generico", "menta")));
     }
 
+    @Test
+    public void listaMedicamentoVazia(){
+        List<Medicamento> listaAtual = new ArrayList<>();
+        List<Medicamento> listaEsperada = new ArrayList<>();
+        Assert.assertEquals(listaAtual.size(), listaEsperada.size());
+    }
+
+    @Test
+    public void listaMedicamentoComDados(){
+        List<Medicamento> listaAtual = new ArrayList<>();
+        List<Medicamento> listaEsperada = new ArrayList<>();
+        Medicamento medicamentoBase = new Medicamento("Aspirina", "Bayer", "Acido acetilsalicilico");
+        listaAtual.add(medicamentoBase);
+        listaEsperada.add(medicamentoBase);
+        Assert.assertEquals(listaAtual.size(), listaEsperada.size());
+    }
 }
