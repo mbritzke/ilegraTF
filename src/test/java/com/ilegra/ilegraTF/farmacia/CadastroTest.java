@@ -56,27 +56,27 @@ public class CadastroTest {
 
     @Test
     public void cadastraMedicamento(){
-        Medicamento novoMedicamento = new Medicamento("Bepantol", "Derma Creme", "Dexpantenol");
+        Medicamento novoMedicamento = new Medicamento("Bepantol", "Derma Creme", "Dexpantenol", 20.0);
         Assert.assertTrue(novoCadastro.cadastraMedicamento(novoMedicamento));
     }
 
     @Test
     public void cadastaMedicamentoRepetido(){
-        Medicamento novoMedicamento = new Medicamento("Nebacetin", "Generico", "Sulfato De Neomicina");
+        Medicamento novoMedicamento = new Medicamento("Nebacetin", "Generico", "Sulfato De Neomicina", 15.0);
         Assert.assertTrue(novoCadastro.cadastraMedicamento(novoMedicamento));
         Assert.assertFalse(novoCadastro.cadastraMedicamento(novoMedicamento));
     }
 
     @Test
     public void pesquisaMedicamento(){
-        Medicamento medicamentoAlvo = new Medicamento("Aspirina", "Bayer", "Acido acetilsalicilico");
+        Medicamento medicamentoAlvo = new Medicamento("Aspirina", "Bayer", "Acido acetilsalicilico", 10.0);
         novoCadastro.cadastraMedicamento(medicamentoAlvo);
         Assert.assertTrue(novoCadastro.pesquisaMedicamento(medicamentoAlvo));
     }
 
     @Test
     public void naoEncontarMedicamento(){
-        Assert.assertFalse(novoCadastro.pesquisaMedicamento(new Medicamento("Bala Valda", "generico", "menta")));
+        Assert.assertFalse(novoCadastro.pesquisaMedicamento(new Medicamento("Bala Valda", "generico", "menta", 14.0)));
     }
 
     @Test
@@ -90,7 +90,7 @@ public class CadastroTest {
     public void listaMedicamentoComDados(){
         List<Medicamento> listaAtual = new ArrayList<>();
         List<Medicamento> listaEsperada = new ArrayList<>();
-        Medicamento medicamentoBase = new Medicamento("Aspirina", "Bayer", "Acido acetilsalicilico");
+        Medicamento medicamentoBase = new Medicamento("Aspirina", "Bayer", "Acido acetilsalicilico", 15.0);
         listaAtual.add(medicamentoBase);
         listaEsperada.add(medicamentoBase);
         Assert.assertEquals(listaAtual.size(), listaEsperada.size());

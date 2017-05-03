@@ -3,14 +3,14 @@ package com.ilegra.ilegraTF.farmacia;
 public class MedicamentoQuimio extends Medicamento {
     private boolean receita;
 
-    public MedicamentoQuimio(String nome, String fabricante, String compostoPrincipal, boolean receita) {
-        super(nome, fabricante, compostoPrincipal);
+    public MedicamentoQuimio(String nome, String fabricante, String compostoPrincipal, boolean receita, double preco) {
+        super(nome, fabricante, compostoPrincipal, preco);
         this.receita = receita;
     }
 
     public MedicamentoQuimio(String nome, String fabricante, String compostoPrincipal, String descricao,
-                             boolean receita) {
-        super(nome, fabricante, compostoPrincipal, descricao);
+                             boolean receita, double preco) {
+        super(nome, fabricante, compostoPrincipal, descricao, preco);
         this.receita = receita;
     }
 

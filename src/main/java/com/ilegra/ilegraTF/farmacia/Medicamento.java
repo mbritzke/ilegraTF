@@ -5,33 +5,37 @@ public class Medicamento {
     private String fabricante;
     private String compostoPrincipal;
     private String descricao;
+    private double preco;
 
-    public Medicamento(String nome, String fabricante, String compostoPrincipal) {
+    public Medicamento(String nome, String fabricante, String compostoPrincipal, double preco) {
         this.nome = nome;
         this.fabricante = fabricante;
         this.compostoPrincipal = compostoPrincipal;
+        this.preco = preco;
     }
 
-    public Medicamento(String nome, String fabricante, String compostoPrincipal, String descricao) {
-        this(nome, fabricante, compostoPrincipal);
+    public Medicamento(String nome, String fabricante, String compostoPrincipal, String descricao, double preco) {
+        this(nome, fabricante, compostoPrincipal, preco);
         this.descricao = descricao;
     }
 
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
     public String getFabricante() {
-        return fabricante;
+        return this.fabricante;
     }
 
     public String getCompostoPrincipal() {
-        return compostoPrincipal;
+        return this.compostoPrincipal;
     }
 
     public String getDescricao() {
-        return descricao;
+        return this.descricao;
     }
+
+    public double getPreco(){return this.preco;}
 
     public void setNome(String nome) {
         this.nome = nome;
