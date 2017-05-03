@@ -1,4 +1,7 @@
-package com.ilegra.ilegraTF.farmacia;
+package com.ilegra.ilegraTF.farmacia.util;
+
+import com.ilegra.ilegraTF.farmacia.Cliente;
+import com.ilegra.ilegraTF.farmacia.Medicamento;
 
 import java.util.ArrayList;
 import java.util.List;

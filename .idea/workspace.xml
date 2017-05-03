@@ -2,6 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b5cc288-9024-4622-8f0e-dc5d02b966ce" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/ilegra/ilegraTF/farmacia/CPF.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/ilegra/ilegraTF/farmacia/Cadastro.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/CPF.java" afterPath="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/CPF.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/Cadastro.java" afterPath="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/Cadastro.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/ilegra/ilegraTF/farmacia/Cliente.class" afterPath="$PROJECT_DIR$/build/classes/main/com/ilegra/ilegraTF/farmacia/Cliente.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/com/ilegra/ilegraTF/farmacia/CadastroTest.class" afterPath="$PROJECT_DIR$/build/classes/test/com/ilegra/ilegraTF/farmacia/CadastroTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/Cliente.java" afterPath="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/Cliente.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/ilegra/ilegraTF/farmacia/CadastroTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/ilegra/ilegraTF/farmacia/CadastroTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,10 +38,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Cadastro.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/Cadastro.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/Cadastro.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="136">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CPFTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/ilegra/ilegraTF/farmacia/CPFTest.java">
+      <file leaf-file-name="CPF.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/CPF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="34">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -56,8 +64,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -242,7 +250,10 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4481219360534" />
+        <entry key="$PROJECT_DIR$" value="4481436510591" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="2958022786" />
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="714125404" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="1852801275" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -351,12 +362,15 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/ilgra/ilegraTF/farmacia/CPF.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/CPF.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ilegra/ilegraTF/farmacia/CPFTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/Cliente.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/Medicamento.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/MedicamentoQuimio.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/Cadastro.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ilegra/ilegraTF/farmacia/CadastroTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ilegra/ilegraTF/farmacia/CPFTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/Cliente.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/CPF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/Cadastro.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/Vendas.java" />
       </list>
     </option>
   </component>
@@ -457,6 +471,66 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="farmacia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ilegraTF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="farmacia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="farmacia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ilegraTF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="farmacia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -495,7 +569,7 @@
     <configuration default="false" name="CadastroTest.listaClientesComDados" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.ilegra.ilegraTF.farmacia.*" />
+          <option name="PATTERN" value="com.ilegra.ilegraTF.farmacia.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -521,7 +595,7 @@
     <configuration default="false" name="CadastroTest.listaClientesVazia" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.ilegra.ilegraTF.farmacia.*" />
+          <option name="PATTERN" value="com.ilegra.ilegraTF.farmacia.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -547,7 +621,7 @@
     <configuration default="false" name="CadastroTest.listaMedicamentoVazia" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.ilegra.ilegraTF.farmacia.*" />
+          <option name="PATTERN" value="com.ilegra.ilegraTF.farmacia.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -573,7 +647,7 @@
     <configuration default="false" name="CadastroTest.listaMedicamentoComDados" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.ilegra.ilegraTF.farmacia.*" />
+          <option name="PATTERN" value="com.ilegra.ilegraTF.farmacia.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -599,7 +673,7 @@
     <configuration default="false" name="CadastroTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.ilegra.ilegraTF.farmacia.*" />
+          <option name="PATTERN" value="com.ilegra.ilegraTF.farmacia.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1100,7 +1174,7 @@
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1493739880858" />
+    <option name="lastUpdateTimestamp" value="1493812341255" />
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
@@ -1118,11 +1192,12 @@
       <workItem from="1493301770999" duration="5354000" />
       <workItem from="1493312098726" duration="6072000" />
       <workItem from="1493739851562" duration="4579000" />
+      <workItem from="1493812271795" duration="1318000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CadastroTest - 2017.05.02 at 14h 05m 21s.xml">
+    <history-entry file="CadastroTest - 2017.05.03 at 11h 05m 53s.xml">
       <configuration name="CadastroTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CadastroTest_listaClientesComDados - 2017.05.02 at 14h 01m 07s.xml">
@@ -1154,11 +1229,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16005000" />
+    <option name="totallyTimeSpent" value="17323000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1175,7 +1249,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28125" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28125" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1209,7 +1283,25 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/Cadastro.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/Cadastro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ilegra/ilegraTF/farmacia/CPFTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/Cadastro.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
@@ -1224,13 +1316,13 @@
         <state relative-caret-position="1071">
           <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
-            <element signature="e#1218#1227#0" expanded="true" />
-            <element signature="e#1510#1519#0" expanded="true" />
+            <element signature="e#1315#1324#0" expanded="true" />
+            <element signature="e#1607#1616#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/Cadastro.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/Cadastro.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="7" column="79" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="79" />
@@ -1245,8 +1337,8 @@
         <state relative-caret-position="510">
           <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
           <folding>
-            <element signature="e#1218#1227#0" expanded="true" />
-            <element signature="e#1510#1519#0" expanded="true" />
+            <element signature="e#1315#1324#0" expanded="true" />
+            <element signature="e#1607#1616#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1255,14 +1347,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/Cliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1285,15 +1369,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/CPF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1305,23 +1380,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ilegra/ilegraTF/farmacia/CadastroTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/Cliente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="92" column="21" lean-forward="false" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
-          <folding>
-            <element signature="e#1218#1227#0" expanded="true" />
-            <element signature="e#1510#1519#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="527">
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/Cadastro.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/Vendas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ilegra/ilegraTF/farmacia/CadastroTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="92" column="21" lean-forward="false" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1315#1324#0" expanded="true" />
+            <element signature="e#1607#1616#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1329,7 +1410,25 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ilegra/ilegraTF/farmacia/CPFTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/Cadastro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/CPF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>

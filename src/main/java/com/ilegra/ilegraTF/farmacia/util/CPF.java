@@ -1,4 +1,4 @@
-package com.ilegra.ilegraTF.farmacia;
+package com.ilegra.ilegraTF.farmacia.util;
 
 public class CPF {
     private String cpf;

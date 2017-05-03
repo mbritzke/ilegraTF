@@ -1,9 +1,12 @@
 package com.ilegra.ilegraTF.farmacia;
 
+import com.ilegra.ilegraTF.farmacia.util.CPF;
+
 public class Cliente {
     private String nome;
     private int idade;
     private CPF cpfCliente;
+    private int pontos = 0;
 
     public Cliente(String nome, int idade, CPF cpfCliente) {
         this.nome = nome;
@@ -33,6 +36,14 @@ public class Cliente {
 
     public void setCpfCliente(CPF cpfCliente) {
         this.cpfCliente = cpfCliente;
+    }
+
+    public int getPontos(){
+        return pontos;
+    }
+
+    public void setPontos(int pontos){
+        this.pontos = pontos;
     }
 
     @Override

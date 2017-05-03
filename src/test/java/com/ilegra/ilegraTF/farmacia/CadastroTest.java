@@ -1,5 +1,7 @@
 package com.ilegra.ilegraTF.farmacia;
 
+import com.ilegra.ilegraTF.farmacia.util.CPF;
+import com.ilegra.ilegraTF.farmacia.util.Cadastro;
 import org.junit.Assert;
 import org.junit.Test;
 
