@@ -1,4 +1,4 @@
-package com.ilegra.ilegraTF.farmacia;
+package com.ilegra.ilegraTF.farmacia.pojo;
 
 public class MedicamentoQuimio extends Medicamento {
     private boolean receita;

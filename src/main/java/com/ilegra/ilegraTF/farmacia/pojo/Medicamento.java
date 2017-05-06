@@ -1,4 +1,4 @@
-package com.ilegra.ilegraTF.farmacia;
+package com.ilegra.ilegraTF.farmacia.pojo;
 
 public class Medicamento {
     private String nome;

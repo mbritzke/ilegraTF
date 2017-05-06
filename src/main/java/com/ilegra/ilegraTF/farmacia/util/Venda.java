@@ -1,7 +1,7 @@
 package com.ilegra.ilegraTF.farmacia.util;
 
-import com.ilegra.ilegraTF.farmacia.Cliente;
-import com.ilegra.ilegraTF.farmacia.Medicamento;
+import com.ilegra.ilegraTF.farmacia.pojo.Cliente;
+import com.ilegra.ilegraTF.farmacia.pojo.Medicamento;
 
 import java.util.List;
 

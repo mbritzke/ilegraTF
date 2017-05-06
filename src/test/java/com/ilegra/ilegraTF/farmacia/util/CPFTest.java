@@ -1,11 +1,8 @@
-package com.ilegra.ilegraTF.farmacia;
+package com.ilegra.ilegraTF.farmacia.util;
 
-import com.ilegra.ilegraTF.farmacia.util.CPF;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class CPFTest {
 
@@ -15,8 +12,9 @@ public class CPFTest {
     public void inicializa(){
         cpfTest = new CPF("273.234.709-43");
 }
+
     @Test
-    public void limpaCPF(){
+    public void limpaCPFNormal(){
         String cpfComPontuacao = cpfTest.getCPF();
         Assert.assertEquals("27323470943", cpfTest.limpaCPF(cpfComPontuacao));
     }

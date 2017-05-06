@@ -1,7 +1,7 @@
-package com.ilegra.ilegraTF.farmacia;
+package com.ilegra.ilegraTF.farmacia.util;
 
-import com.ilegra.ilegraTF.farmacia.util.CPF;
-import com.ilegra.ilegraTF.farmacia.util.Cadastro;
+import com.ilegra.ilegraTF.farmacia.pojo.Cliente;
+import com.ilegra.ilegraTF.farmacia.pojo.Medicamento;
 import org.junit.Assert;
 import org.junit.Test;
 
