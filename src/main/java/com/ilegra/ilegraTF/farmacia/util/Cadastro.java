@@ -12,7 +12,7 @@ public class Cadastro {
     private List<Cliente> listaClientes;
     private List<Medicamento> listaMedicamentos;
 
-    public Cadastro() {
+    private Cadastro() {
         listaClientes = new ArrayList<Cliente>();
         listaMedicamentos = new ArrayList<Medicamento>();
     }

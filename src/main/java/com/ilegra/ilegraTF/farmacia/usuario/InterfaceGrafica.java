@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class InterfaceGrafica {
 
-    private Cadastro cadastro;
+    private Cadastro cadastro ;
     private Scanner teclado;
 
     public InterfaceGrafica(){
