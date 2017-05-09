@@ -7,12 +7,13 @@ import com.ilegra.ilegraTF.farmacia.util.CPF;
 import com.ilegra.ilegraTF.farmacia.util.Cadastro;
 import com.ilegra.ilegraTF.farmacia.util.Venda;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class InterfaceGrafica {
 
-    Cadastro cadastro;
-    Scanner teclado;
+    private Cadastro cadastro;
+    private Scanner teclado;
 
     public InterfaceGrafica(){
         cadastro  = new Cadastro();
@@ -38,11 +39,16 @@ public class InterfaceGrafica {
                 System.out.println(statusMedicamento);
                 break;
             case 3:
-                String statusVenda = interacaoVenda();
+
                 break;
             case 4:
-                //TODO
+                String statusVenda = interacaoVenda();
+                System.out.println(statusVenda);
                 break;
+            case 5:
+                System.out.println("tchau");
+                teclado.close();
+                System.exit(0);
         }
         teclado.close();
     }
@@ -91,9 +97,9 @@ public class InterfaceGrafica {
             System.out.println("Digite a descriçao: ");
             descricao = teclado.next();
         }
-        boolean status = false;
+        boolean status;
         if(tipoMedicamento == 1){
-            if(descricao.isEmpty()){
+            if(descricao == null){
                 Medicamento novoMedicamento = new Medicamento(nome, fabricante, compostoPrincipal, preco);
                 status = cadastro.cadastraMedicamento(novoMedicamento);
             }else{
@@ -110,7 +116,7 @@ public class InterfaceGrafica {
             if(resposta == 1){
                 receita = true;
             }
-            if(descricao.isEmpty()){
+            if(descricao == null){
                 Medicamento novoMedicamento = new MedicamentoQuimio(nome, fabricante, compostoPrincipal, receita, preco);
                 status = cadastro.cadastraMedicamento(novoMedicamento);
             }else{
@@ -118,7 +124,7 @@ public class InterfaceGrafica {
                 status = cadastro.cadastraMedicamento(novoMedicamento);
             }
         }
-        if(status == false)
+        if(!status)
             return "MEDICAMENTO JÁ CADASTRADO";
         return "MEDICAMENTO CADASTRADO";
     }
@@ -132,15 +138,17 @@ public class InterfaceGrafica {
         if(comprador.getNome() == null)
             return "CLIENTE NÃO CADASTRADO";
         Venda novaVenda = new Venda();
-        boolean terminou == false;
+        System.out.println("=== ATENÇÃO ===\n" +
+                "Medicamentos Quimioterápicos precisam de receita para serem vendidos");
+        boolean terminou = false;
         while(!terminou){
             System.out.println("Digite o medicamento: ");
             String medicamento = teclado.next();
             Medicamento produto = cadastro.pesquisaRetornaMedicamento(medicamento);
             if(produto.getNome() != null)
                 novaVenda.listaCompras(produto);
-            if(produto.getNome() == null)
-                break;
+            else
+                System.out.println("Medicamento inválido");
             System.out.println("Deseja adicionar mais um produto?\n" +
                     "(1) - Sim\n" +
                     "(2) - Não\n");
@@ -148,13 +156,34 @@ public class InterfaceGrafica {
            if(escolha == 1)
                terminou = true;
         }
-        double total = novaVenda.calculaVenda();
-        System.out.println("Total de produtos: " + total);
-        //implementar os descontos de idoso
-        if(comprador.getPontos() >= total){
-            System.out.println("Cliente pode pagar com os pontos ");
+        List<Medicamento> medicamentosComReceita = novaVenda.medicamentosComReceita();
+        if(medicamentosComReceita != null){
+            System.out.println("Medicamentos precisam de receita");
+            System.out.println("(1) - Cliente tem a receita");
+            System.out.println("(2) - Cliente não tem receita");
+            int statusReceita = teclado.nextInt();
+            if(statusReceita == 2)
+                return "VENDA CANCELADA, CLIENTE NÃO POSSUI RECEITA";
         }
-        //implementar as modificacoes nos pontos do cliente;
+        double total = novaVenda.calculaVenda(comprador.getIdade());
+        System.out.println("Total de produtos: " + total);
+        if (comprador.getPontos() >= total) {
+            System.out.println("CLIENTE: " + comprador.getNome() + " tem " + comprador.getPontos() + " pontos");
+            System.out.println("Deseja pagar com pontos? " +
+                    "(1) - SIM\n" +
+                    "(2) - NÃO");
+            int escolhePontos = teclado.nextInt();
+            if (escolhePontos == 1) {
+                comprador.setPontos(0);
+            }
+        } else {
+            System.out.println("Digite o valor: ");
+            double pagamento = teclado.nextDouble();
+            System.out.println("TROCO = " + novaVenda.vende(total, pagamento));
+            comprador.setPontos(novaVenda.calculaPontos(pagamento));
+            System.out.println(comprador.toString());
+        }
+        return "VENDA REALIZADA";
     }
 
     public static void main(String args[]){

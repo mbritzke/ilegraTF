@@ -17,15 +17,4 @@ public class VendaTest {
         novoCadastro = new Cadastro();
         vendaTeste = new Venda();
     }
-
-    @Test
-    public void calculaVenda(){
-        Cliente clienteTeste = new Cliente("João", 18, new CPF("195.864.874-40"));
-        Medicamento medicamentoTeste = new Medicamento("Bepantol", "Derma Creme", "Dexpantenol", 20.0);
-        novoCadastro.cadastroCliente(clienteTeste);
-        novoCadastro.cadastraMedicamento(medicamentoTeste);
-        vendaTeste = new Venda();
-        double valor = vendaTeste.calculaVenda(novoCadastro, clienteTeste, novoCadastro.retornaListaMedicamentos());
-        Assert.assertEquals(20, (long)valor);
-    }
 }
