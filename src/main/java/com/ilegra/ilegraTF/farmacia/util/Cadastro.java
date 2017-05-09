@@ -2,6 +2,7 @@ package com.ilegra.ilegraTF.farmacia.util;
 
 import com.ilegra.ilegraTF.farmacia.pojo.Cliente;
 import com.ilegra.ilegraTF.farmacia.pojo.Medicamento;
+import com.ilegra.ilegraTF.farmacia.pojo.MedicamentoQuimio;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,6 +33,14 @@ public class Cadastro {
         return false;
     }
 
+    public Cliente pesquisaRetornaCliente(CPF cpf){
+        for(Cliente auxiliar: listaClientes){
+            if(auxiliar.getCpfCliente().getCPF() == cpf.getCPF())
+                return auxiliar;
+        }
+        return new Cliente(null, 0, null);
+    }
+
     public List<Cliente> retornaListaClientes(){
         return this.listaClientes;
     }
@@ -51,6 +60,14 @@ public class Cadastro {
         }
         return false;
    }
+
+    public Medicamento pesquisaRetornaMedicamento(String nome){
+        for(Medicamento auxiliar: listaMedicamentos){
+            if(auxiliar.getNome().equalsIgnoreCase(nome))
+                return auxiliar;
+        }
+        return new Medicamento(null, null, null, 0);
+    }
 
     public List<Medicamento> retornaListaMedicamentos(){
         return listaMedicamentos;

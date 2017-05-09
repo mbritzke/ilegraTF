@@ -5,6 +5,7 @@ import com.ilegra.ilegraTF.farmacia.pojo.Medicamento;
 import com.ilegra.ilegraTF.farmacia.pojo.MedicamentoQuimio;
 import com.ilegra.ilegraTF.farmacia.util.CPF;
 import com.ilegra.ilegraTF.farmacia.util.Cadastro;
+import com.ilegra.ilegraTF.farmacia.util.Venda;
 
 import java.util.Scanner;
 
@@ -37,7 +38,7 @@ public class InterfaceGrafica {
                 System.out.println(statusMedicamento);
                 break;
             case 3:
-                //TODO
+                String statusVenda = interacaoVenda();
                 break;
             case 4:
                 //TODO
@@ -120,6 +121,40 @@ public class InterfaceGrafica {
         if(status == false)
             return "MEDICAMENTO JÁ CADASTRADO";
         return "MEDICAMENTO CADASTRADO";
+    }
+
+    private String interacaoVenda() {
+        System.out.println("Digite o CPF do cliente: ");
+        String cpf = teclado.next();
+        CPF auxiliar = new CPF(cpf);
+        String cpfLimpo = auxiliar.limpaCPF(cpf);
+        Cliente comprador = cadastro.pesquisaRetornaCliente(new CPF(cpfLimpo));
+        if(comprador.getNome() == null)
+            return "CLIENTE NÃO CADASTRADO";
+        Venda novaVenda = new Venda();
+        boolean terminou == false;
+        while(!terminou){
+            System.out.println("Digite o medicamento: ");
+            String medicamento = teclado.next();
+            Medicamento produto = cadastro.pesquisaRetornaMedicamento(medicamento);
+            if(produto.getNome() != null)
+                novaVenda.listaCompras(produto);
+            if(produto.getNome() == null)
+                break;
+            System.out.println("Deseja adicionar mais um produto?\n" +
+                    "(1) - Sim\n" +
+                    "(2) - Não\n");
+           int escolha = teclado.nextInt();
+           if(escolha == 1)
+               terminou = true;
+        }
+        double total = novaVenda.calculaVenda();
+        System.out.println("Total de produtos: " + total);
+        //implementar os descontos de idoso
+        if(comprador.getPontos() >= total){
+            System.out.println("Cliente pode pagar com os pontos ");
+        }
+        //implementar as modificacoes nos pontos do cliente;
     }
 
     public static void main(String args[]){
