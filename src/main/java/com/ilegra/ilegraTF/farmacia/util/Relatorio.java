@@ -1,6 +1,7 @@
 package com.ilegra.ilegraTF.farmacia.util;
 
 import com.ilegra.ilegraTF.farmacia.lista.OrdenaListaCliente;
+import com.ilegra.ilegraTF.farmacia.lista.OrdenaListaMedicamentoNome;
 import com.ilegra.ilegraTF.farmacia.pojo.Cliente;
 import com.ilegra.ilegraTF.farmacia.pojo.Medicamento;
 
@@ -16,12 +17,13 @@ public class Relatorio {
         return listaClientes;
     }
 
-    public List<Medicamento> listaMedicamentoAZ(){
-        List<Medicamento> medicamentoAZ = new ArrayList<>();
-        //ordenar
-        return medicamentoAZ;
+    public List<Medicamento> listaMedicamentoAZ(List<Medicamento> listaMedicamento){
+        OrdenaListaMedicamentoNome ordena =  new OrdenaListaMedicamentoNome();
+        Collections.sort(listaMedicamento, ordena);
+        return listaMedicamento;
     }
 
+    /*
     public List<Medicamento> listaMedicamento(){
         List<Medicamento> medicamentoFito = new ArrayList<>();
         //ordenar
@@ -39,4 +41,5 @@ public class Relatorio {
         //remédio mais vendido
         //tipo mais vendido
     }
+    */
 }
