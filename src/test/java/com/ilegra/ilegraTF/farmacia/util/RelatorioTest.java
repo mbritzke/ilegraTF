@@ -5,6 +5,7 @@ import com.ilegra.ilegraTF.farmacia.pojo.Medicamento;
 import com.ilegra.ilegraTF.farmacia.pojo.MedicamentoQuimio;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.Assert;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,20 +34,14 @@ public class RelatorioTest {
 
     @Test
     public void ordenarClientePorNome(){
-        for(Cliente auxiliar: listaCliente)
-            System.out.println(auxiliar.toString());
-        relatorio.listaClienteAZ(listaCliente);
-        System.out.println("-----------------\n LISTA ORDENADA:\n");
-        for(Cliente auxiliar: listaCliente)
-            System.out.println(auxiliar.toString());
+        List<Cliente> listaOrdenada = relatorio.listaClienteAZ(listaCliente);
+        Assert.assertEquals(listaOrdenada, listaCliente);
     }
 
     @Test
-    public void ordenarMedicamentoPorNome(){
-        for(Medicamento medicamento: listaMedicamento)
-            System.out.println(medicamento.toString() + " \n ---------------- \n");
-        relatorio.listaMedicamentoAZ(listaMedicamento);
-        for(Medicamento medicamento: listaMedicamento)
-            System.out.println(medicamento.toString() + " \n ---------------- \n");
+    public void listaMedicamentoFitoterapico(){
+       List<Medicamento> somenteFitoterapico =  relatorio.fitoreapico(listaMedicamento);
+       int tamanho = somenteFitoterapico.size();
+       Assert.assertEquals(2, tamanho);
     }
 }

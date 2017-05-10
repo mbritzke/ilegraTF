@@ -25,8 +25,8 @@ public class InterfaceGrafica {
                 " - Escolha uma abaixo:\n" +
                 "(1) Cadastrar usuário\n" +
                 "(2) Cadastrar medicamento\n" +
-                "(3) Relatórios\n" +
-                "(4) Venda\n" +
+                "(3) Venda\n" +
+                "(4) Relátorios\n" +
                 "(5) Sair\n");
         int escolha = teclado.nextInt();
         switch (escolha){
@@ -39,11 +39,11 @@ public class InterfaceGrafica {
                 System.out.println(statusMedicamento);
                 break;
             case 3:
-
-                break;
-            case 4:
                 String statusVenda = interacaoVenda();
                 System.out.println(statusVenda);
+                break;
+            case 4:
+
                 break;
             case 5:
                 System.out.println("tchau");

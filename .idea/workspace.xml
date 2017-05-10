@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b5cc288-9024-4622-8f0e-dc5d02b966ce" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/usuario/InterfaceGrafica.java" afterPath="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/usuario/InterfaceGrafica.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/Relatorio.java" afterPath="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/Relatorio.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/ilegra/ilegraTF/farmacia/util/RelatorioTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/ilegra/ilegraTF/farmacia/util/RelatorioTest.java" />
     </list>
@@ -31,46 +31,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="InterfaceGrafica.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/usuario/InterfaceGrafica.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="46" column="22" lean-forward="true" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Relatorio.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/Relatorio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+            <state relative-caret-position="612">
+              <caret line="44" column="43" lean-forward="true" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cadastro.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/Cadastro.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="47" column="56" lean-forward="false" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrdenaListaMedicamentoNome.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/lista/OrdenaListaMedicamentoNome.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RelatorioTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RelatorioTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ilegra/ilegraTF/farmacia/util/RelatorioTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="49" column="83" lean-forward="false" selection-start-line="49" selection-start-column="83" selection-end-line="49" selection-end-column="83" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="476">
+              <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -394,12 +380,12 @@
         <option value="$PROJECT_DIR$/src/test/java/com/ilegra/ilegraTF/farmacia/util/CPFTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ilegra/ilegraTF/farmacia/util/VendaTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/Venda.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/usuario/InterfaceGrafica.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/Cadastro.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/lista/OrdenaListaCliente.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/pojo/Cliente.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/lista/OrdenaListaMedicamento.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/lista/OrdenaListaMedicamentoNome.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/usuario/InterfaceGrafica.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/Relatorio.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ilegra/ilegraTF/farmacia/util/RelatorioTest.java" />
       </list>
@@ -562,6 +548,10 @@
               <option name="myItemId" value="farmacia" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="usuario" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -657,79 +647,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RelatorioTest.ordenarMedicamentoPorNome">
-    <configuration default="false" name="CPFTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ilegra.ilegraTF.farmacia.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="farmacia_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ilegra.ilegraTF.farmacia.util" />
-      <option name="MAIN_CLASS_NAME" value="com.ilegra.ilegraTF.farmacia.util.CPFTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="InterfaceGrafica" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ilegra.ilegraTF.farmacia.usuario.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.ilegra.ilegraTF.farmacia.usuario.InterfaceGrafica" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="farmacia_main" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="RelatorioTest.testaOrdenacao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ilegra.ilegraTF.farmacia.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="farmacia_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ilegra.ilegraTF.farmacia.util" />
-      <option name="MAIN_CLASS_NAME" value="com.ilegra.ilegraTF.farmacia.util.RelatorioTest" />
-      <option name="METHOD_NAME" value="testaOrdenacao" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.RelatorioTest">
     <configuration default="false" name="RelatorioTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -769,6 +687,84 @@
       <option name="PACKAGE_NAME" value="com.ilegra.ilegraTF.farmacia.util" />
       <option name="MAIN_CLASS_NAME" value="com.ilegra.ilegraTF.farmacia.util.RelatorioTest" />
       <option name="METHOD_NAME" value="ordenarMedicamentoPorNome" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="RelatorioTest.listaMedicamentoFitorapico" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ilegra.ilegraTF.farmacia.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="farmacia_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ilegra.ilegraTF.farmacia.util" />
+      <option name="MAIN_CLASS_NAME" value="com.ilegra.ilegraTF.farmacia.util.RelatorioTest" />
+      <option name="METHOD_NAME" value="listaMedicamentoFitorapico" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="RelatorioTest.ordenarClientePorNome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ilegra.ilegraTF.farmacia.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="farmacia_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ilegra.ilegraTF.farmacia.util" />
+      <option name="MAIN_CLASS_NAME" value="com.ilegra.ilegraTF.farmacia.util.RelatorioTest" />
+      <option name="METHOD_NAME" value="ordenarClientePorNome" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="RelatorioTest.listaMedicamentoFitoterapico" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ilegra.ilegraTF.farmacia.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="farmacia_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ilegra.ilegraTF.farmacia.util" />
+      <option name="MAIN_CLASS_NAME" value="com.ilegra.ilegraTF.farmacia.util.RelatorioTest" />
+      <option name="METHOD_NAME" value="listaMedicamentoFitoterapico" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1243,19 +1239,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CPFTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.InterfaceGrafica" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.RelatorioTest.testaOrdenacao" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.RelatorioTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.RelatorioTest.ordenarMedicamentoPorNome" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.RelatorioTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.RelatorioTest.ordenarMedicamentoPorNome" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.RelatorioTest.listaMedicamentoFitorapico" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.RelatorioTest.ordenarClientePorNome" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.RelatorioTest.listaMedicamentoFitoterapico" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.RelatorioTest.ordenarMedicamentoPorNome" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.RelatorioTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.RelatorioTest.testaOrdenacao" />
-        <item index="3" class="java.lang.String" itemvalue="Application.InterfaceGrafica" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CPFTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.RelatorioTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RelatorioTest.ordenarClientePorNome" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RelatorioTest.listaMedicamentoFitoterapico" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.RelatorioTest.listaMedicamentoFitorapico" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.RelatorioTest.ordenarMedicamentoPorNome" />
       </list>
     </recent_temporary>
   </component>
@@ -1285,52 +1281,51 @@
       <workItem from="1494007798101" duration="1323000" />
       <workItem from="1494099320821" duration="8503000" />
       <workItem from="1494346693471" duration="7479000" />
-      <workItem from="1494433774159" duration="4726000" />
+      <workItem from="1494433774159" duration="6912000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RelatorioTest_ordenarMedicamentoPorNome - 2017.05.10 at 14h 44m 28s.xml">
-      <configuration name="RelatorioTest.ordenarMedicamentoPorNome" configurationId="JUnit" />
+    <history-entry file="RelatorioTest - 2017.05.10 at 15h 24m 14s.xml">
+      <configuration name="RelatorioTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RelatorioTest_ordenarMedicamentoPorNome - 2017.05.10 at 14h 44m 51s.xml">
-      <configuration name="RelatorioTest.ordenarMedicamentoPorNome" configurationId="JUnit" />
+    <history-entry file="RelatorioTest - 2017.05.10 at 15h 30m 01s.xml">
+      <configuration name="RelatorioTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RelatorioTest_ordenarMedicamentoPorNome - 2017.05.10 at 14h 46m 22s.xml">
-      <configuration name="RelatorioTest.ordenarMedicamentoPorNome" configurationId="JUnit" />
+    <history-entry file="RelatorioTest - 2017.05.10 at 15h 30m 47s.xml">
+      <configuration name="RelatorioTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RelatorioTest_ordenarMedicamentoPorNome - 2017.05.10 at 14h 47m 28s.xml">
-      <configuration name="RelatorioTest.ordenarMedicamentoPorNome" configurationId="JUnit" />
+    <history-entry file="RelatorioTest - 2017.05.10 at 15h 31m 09s.xml">
+      <configuration name="RelatorioTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RelatorioTest_ordenarMedicamentoPorNome - 2017.05.10 at 14h 48m 29s.xml">
-      <configuration name="RelatorioTest.ordenarMedicamentoPorNome" configurationId="JUnit" />
+    <history-entry file="RelatorioTest_listaMedicamentoFitorapico - 2017.05.10 at 15h 21m 43s.xml">
+      <configuration name="RelatorioTest.listaMedicamentoFitorapico" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RelatorioTest_ordenarMedicamentoPorNome - 2017.05.10 at 14h 49m 23s.xml">
-      <configuration name="RelatorioTest.ordenarMedicamentoPorNome" configurationId="JUnit" />
+    <history-entry file="RelatorioTest_listaMedicamentoFitorapico - 2017.05.10 at 15h 25m 03s.xml">
+      <configuration name="RelatorioTest.listaMedicamentoFitorapico" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RelatorioTest_ordenarMedicamentoPorNome - 2017.05.10 at 14h 51m 16s.xml">
-      <configuration name="RelatorioTest.ordenarMedicamentoPorNome" configurationId="JUnit" />
+    <history-entry file="RelatorioTest_listaMedicamentoFitoterapico - 2017.05.10 at 15h 25m 43s.xml">
+      <configuration name="RelatorioTest.listaMedicamentoFitoterapico" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RelatorioTest_ordenarMedicamentoPorNome - 2017.05.10 at 14h 53m 55s.xml">
-      <configuration name="RelatorioTest.ordenarMedicamentoPorNome" configurationId="JUnit" />
+    <history-entry file="RelatorioTest_ordenarClientePorNome - 2017.05.10 at 15h 29m 05s.xml">
+      <configuration name="RelatorioTest.ordenarClientePorNome" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RelatorioTest_ordenarMedicamentoPorNome - 2017.05.10 at 14h 54m 37s.xml">
-      <configuration name="RelatorioTest.ordenarMedicamentoPorNome" configurationId="JUnit" />
+    <history-entry file="RelatorioTest_ordenarClientePorNome - 2017.05.10 at 15h 31m 01s.xml">
+      <configuration name="RelatorioTest.ordenarClientePorNome" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RelatorioTest_ordenarMedicamentoPorNome - 2017.05.10 at 14h 55m 28s.xml">
+    <history-entry file="RelatorioTest_ordenarMedicamentoPorNome - 2017.05.10 at 15h 22m 23s.xml">
       <configuration name="RelatorioTest.ordenarMedicamentoPorNome" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46492000" />
+    <option name="totallyTimeSpent" value="48678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.50277776" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8981723" sideWeight="0.50555557" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1347,9 +1342,9 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8981723" sideWeight="0.49722221" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8981723" sideWeight="0.49444443" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24722221" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24722221" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -1536,16 +1531,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/Relatorios.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ilegra/ilegraTF/farmacia/util/VendasTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ilegra/ilegraTF/farmacia/util/CadastroTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/CPF.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1558,14 +1543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/usuario/InterfaceGrafica.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1607,22 +1584,6 @@
             <element signature="e#266#267#0" expanded="true" />
             <element signature="e#337#338#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/Relatorio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/Cadastro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="47" column="56" lean-forward="false" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1676,16 +1637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ilegra/ilegraTF/farmacia/util/RelatorioTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="49" column="83" lean-forward="false" selection-start-line="49" selection-start-column="83" selection-end-line="49" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/lista/OrdenaListaMedicamentoNome.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1693,6 +1644,46 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/Cadastro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="47" column="56" lean-forward="false" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/usuario/InterfaceGrafica.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="46" column="22" lean-forward="true" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ilegra/ilegraTF/farmacia/util/CadastroTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/util/Relatorio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="44" column="43" lean-forward="true" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ilegra/ilegraTF/farmacia/util/RelatorioTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
