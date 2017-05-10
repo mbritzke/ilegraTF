@@ -48,6 +48,6 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "CLIENTE NOME = " + nome + "\nIDADE = " + idade + "\n" + "CPF: " + cpfCliente;
+        return "CLIENTE NOME = " + nome + "\nIDADE = " + idade + "\n"  + cpfCliente;
     }
 }
