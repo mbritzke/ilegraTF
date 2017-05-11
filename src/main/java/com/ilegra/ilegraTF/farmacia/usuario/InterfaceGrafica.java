@@ -3,10 +3,7 @@ package com.ilegra.ilegraTF.farmacia.usuario;
 import com.ilegra.ilegraTF.farmacia.pojo.Cliente;
 import com.ilegra.ilegraTF.farmacia.pojo.Medicamento;
 import com.ilegra.ilegraTF.farmacia.pojo.MedicamentoQuimio;
-import com.ilegra.ilegraTF.farmacia.util.CPF;
-import com.ilegra.ilegraTF.farmacia.util.Cadastro;
-import com.ilegra.ilegraTF.farmacia.util.Relatorio;
-import com.ilegra.ilegraTF.farmacia.util.Venda;
+import com.ilegra.ilegraTF.farmacia.util.*;
 
 import java.util.List;
 import java.util.Scanner;
@@ -16,11 +13,13 @@ public class InterfaceGrafica {
     private Cadastro cadastro;
     private Relatorio relatorio;
     private Scanner teclado;
+    private Dados dados;
 
     public InterfaceGrafica(){
         cadastro  = new Cadastro();
         teclado = new Scanner(System.in);
         relatorio = new Relatorio();
+        dados = new Dados;
     }
 
     public void interacao(){
@@ -246,9 +245,5 @@ public class InterfaceGrafica {
         return "FIM LISTA";
     }
 
-    public static void main(String args[]){
-        InterfaceGrafica i = new InterfaceGrafica();
-        i.interacao();
-    }
 }
 

@@ -50,11 +50,4 @@ public class Relatorio {
         separaTipoMedicamento(listaMedicamento);
         return quimioterapico;
    }
-    /*
-   public void estatistica(){
-        //tipos de clientes atendidos no dia
-        //remédio mais vendido
-        //tipo mais vendido
-    }
-    */
 }
