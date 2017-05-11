@@ -20,13 +20,13 @@ public class Relatorio {
         quimioterapico = new ArrayList<>();
     }
 
-    public List<Cliente> listaClienteAZ(List<Cliente> listaClientes){
+    public List<Cliente> listaClienteNome(List<Cliente> listaClientes){
         OrdenaListaCliente ordena = new OrdenaListaCliente();
         Collections.sort(listaClientes, ordena);
         return listaClientes;
     }
 
-    public List<Medicamento> listaMedicamentoAZ(List<Medicamento> listaMedicamento){
+    public List<Medicamento> listaMedicamentoNome(List<Medicamento> listaMedicamento){
         OrdenaListaMedicamentoNome ordena =  new OrdenaListaMedicamentoNome();
         Collections.sort(listaMedicamento, ordena);
         return listaMedicamento;
@@ -46,14 +46,12 @@ public class Relatorio {
         }
     }
 
+   public List<Medicamento> quimioterapico(List<Medicamento> listaMedicamento){
+        separaTipoMedicamento(listaMedicamento);
+        return quimioterapico;
+   }
     /*
-    public List<Medicamento> listaMedicamentoQuimio(){
-        List<Medicamento> medicamentoQuimio = new ArrayList<>();
-        //ordenar
-        return medicamentoQuimio;
-    }
-
-    public void estatistica(){
+   public void estatistica(){
         //tipos de clientes atendidos no dia
         //remédio mais vendido
         //tipo mais vendido
