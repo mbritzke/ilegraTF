@@ -13,13 +13,16 @@ public class InterfaceGrafica {
     private Cadastro cadastro;
     private Relatorio relatorio;
     private Scanner teclado;
-    private Dados dados;
+    private String padrao = "(1) - SIM\n(2) - NÃO";
 
     public InterfaceGrafica(){
         cadastro  = new Cadastro();
         teclado = new Scanner(System.in);
         relatorio = new Relatorio();
-        dados = new Dados;
+    }
+
+    public Cadastro retornaCadastro(){
+        return cadastro;
     }
 
     public void interacao(){
@@ -45,7 +48,7 @@ public class InterfaceGrafica {
                 System.out.println(statusVenda);
                 break;
             case 4:
-
+                String statusRelatorio = interacaoRelatorio();
                 break;
             case 5:
                 System.out.println("tchau");
@@ -57,18 +60,26 @@ public class InterfaceGrafica {
 
     private String interacaoCadastraUsuario(){
         System.out.println("1 - CADASTRAR CLIENTE: \n" +
-                "Digite um nome:");
-        String nome = teclado.next();
-        System.out.println("Digite a idade: ");
-        int idade = teclado.nextInt();
-        System.out.println("Digite o CPF: ");
+                "Digite o CPF: ");
         String cpf = teclado.next();
         CPF cpfNovoCliente = new CPF(cpf);
-        Cliente novoCliente = new Cliente(nome, idade, cpfNovoCliente);
+        Cliente auxiliar = cadastro.pesquisaRetornaCliente(cpfNovoCliente);
+        if(!auxiliar.getNome().isEmpty()){
+            System.out.println("Digite o nome: ");
+            String nome = teclado.next();
+            System.out.println("Digite a idade: ");
+            int idade = teclado.nextInt();
+            Cliente novoCliente = new Cliente(nome, idade, cpfNovoCliente);
+            return cadastraUsuario(novoCliente);
+        }
+        return "CLIENTE JÁ CADASTRADO!";
+    }
+
+    private String cadastraUsuario(Cliente novoCliente){
         boolean statusCLiente = cadastro.cadastroCliente(novoCliente);
         if(statusCLiente)
             return"CLIENTE CADASTRADO!";
-        return "Cliente já está cadastrado.";
+        return "CLIENTE JÁ CADASTRADO!";
     }
 
     private String interacaoMedicamento(){
