@@ -58,6 +58,7 @@ public class InterfaceGrafica {
                 break;
             case 4:
                 String statusRelatorio = interacaoRelatorio();
+                System.out.println(statusRelatorio);
                 break;
             case 5:
                 System.out.println("tchau");
@@ -190,8 +191,7 @@ public class InterfaceGrafica {
                 novaVenda.listaCompras(produto);
             else
                 System.out.println("Medicamento inválido");
-            System.out.println("Deseja adicionar mais um produto?");
-            System.out.println(padrao);
+            System.out.println("Deseja adicionar mais um produto?" + "\n" + padrao);
             int escolha = teclado.nextInt();
             if(escolha == 1)
                terminou = true;
