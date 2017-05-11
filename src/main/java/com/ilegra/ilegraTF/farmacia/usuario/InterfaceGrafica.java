@@ -5,6 +5,7 @@ import com.ilegra.ilegraTF.farmacia.pojo.Medicamento;
 import com.ilegra.ilegraTF.farmacia.pojo.MedicamentoQuimio;
 import com.ilegra.ilegraTF.farmacia.util.CPF;
 import com.ilegra.ilegraTF.farmacia.util.Cadastro;
+import com.ilegra.ilegraTF.farmacia.util.Relatorio;
 import com.ilegra.ilegraTF.farmacia.util.Venda;
 
 import java.util.List;
@@ -12,12 +13,14 @@ import java.util.Scanner;
 
 public class InterfaceGrafica {
 
-    private Cadastro cadastro ;
+    private Cadastro cadastro;
+    private Relatorio relatorio;
     private Scanner teclado;
 
     public InterfaceGrafica(){
         cadastro  = new Cadastro();
         teclado = new Scanner(System.in);
+        relatorio = new Relatorio();
     }
 
     public void interacao(){
@@ -184,6 +187,63 @@ public class InterfaceGrafica {
             System.out.println(comprador.toString());
         }
         return "VENDA REALIZADA";
+    }
+
+    private String interacaoRelatorio(){
+        System.out.println("==== RELATORIOS ====\n" +
+                "Escolha uma opção abaixo:\n" +
+                "(1) - Clientes por ordem alfabetica\n" +
+                "(2) - Medicamentos por ordem alfabetica\n" +
+                "(3) - Medicamentos por tipo\n");
+        int escolha = teclado.nextInt();
+        return escolheRelatorio(escolha);
+    }
+
+    private String escolheRelatorio(int escolha) {
+        if(escolha == 1) {
+            List<Cliente> listaCliente = relatorio.listaClienteNome(cadastro.retornaListaClientes());
+            return imprimeRelatorioCliente(listaCliente);
+        }else if(escolha == 2){
+            List<Medicamento> listaMedicamento =  relatorio.listaMedicamentoNome(cadastro.retornaListaMedicamentos());
+            return imprimeRelatorioMedicamento(listaMedicamento);
+        }else{
+            return escolheTipoMedicamento();
+        }
+    }
+
+    private String escolheTipoMedicamento() {
+        System.out.println("Escolha o tipo:\n" +
+                "(1) - Fitoterapico\n" +
+                "(2) - Quimioterapico");
+        int escolhaTipo = teclado.nextInt();
+        if(escolhaTipo == 1)
+            return imprimeFitoterapico();
+        return imprimeQuimioTerapico();
+    }
+
+
+    private String imprimeFitoterapico() {
+        List<Medicamento> fitoterapico = relatorio.fitoreapico(cadastro.retornaListaMedicamentos());
+        return imprimeRelatorioMedicamento(fitoterapico);
+    }
+
+    private String imprimeQuimioTerapico() {
+        List<Medicamento> quimiotterapico = relatorio.quimioterapico(cadastro.retornaListaMedicamentos());
+        return imprimeRelatorioMedicamento(quimiotterapico);
+    }
+
+    private String imprimeRelatorioCliente(List<Cliente> listaCliente) {
+        for(Cliente cliente: listaCliente){
+            System.out.println(cliente.toString());
+        }
+        return "FIM LISTA";
+    }
+
+    private String imprimeRelatorioMedicamento(List<Medicamento> listaMedicamento) {
+        for(Medicamento medicamento: listaMedicamento){
+            System.out.println(medicamento.toString());
+        }
+        return "FIM LISTA";
     }
 
     public static void main(String args[]){
