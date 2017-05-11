@@ -146,9 +146,7 @@ public class InterfaceGrafica {
         }
         else{
             boolean receita = false;
-            System.out.println("Medicamento precisa de receita? "+
-                    "(1) - SIM\n" +
-                    "(2) - NÃO");
+            System.out.println("Medicamento precisa de receita? "+ "\n" + padrao);
             int resposta = teclado.nextInt();
             if(resposta == 1){
                 receita = true;

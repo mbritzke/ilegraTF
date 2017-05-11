@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b5cc288-9024-4622-8f0e-dc5d02b966ce" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/usuario/InterfaceGrafica.java" afterPath="$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/usuario/InterfaceGrafica.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,8 +43,8 @@
       <file leaf-file-name="InterfaceGrafica.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/usuario/InterfaceGrafica.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1105">
-              <caret line="58" column="19" lean-forward="true" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+            <state relative-caret-position="578">
+              <caret line="148" column="80" lean-forward="false" selection-start-line="148" selection-start-column="80" selection-end-line="148" selection-end-column="80" />
               <folding>
                 <element signature="e#870#871#0" expanded="true" />
                 <element signature="e#901#902#0" expanded="true" />
@@ -1151,7 +1152,7 @@
       <workItem from="1494099320821" duration="8503000" />
       <workItem from="1494346693471" duration="7479000" />
       <workItem from="1494433774159" duration="6912000" />
-      <workItem from="1494471860495" duration="8259000" />
+      <workItem from="1494471860495" duration="8909000" />
     </task>
     <servers />
   </component>
@@ -1188,10 +1189,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56937000" />
+    <option name="totallyTimeSpent" value="57587000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1583,8 +1584,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ilegra/ilegraTF/farmacia/usuario/InterfaceGrafica.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1105">
-          <caret line="58" column="19" lean-forward="true" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+        <state relative-caret-position="578">
+          <caret line="148" column="80" lean-forward="false" selection-start-line="148" selection-start-column="80" selection-end-line="148" selection-end-column="80" />
           <folding>
             <element signature="e#870#871#0" expanded="true" />
             <element signature="e#901#902#0" expanded="true" />
