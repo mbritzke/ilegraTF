@@ -10,12 +10,16 @@ import java.util.Scanner;
 
 public class InterfaceGrafica {
 
+    private CPF cpfAuxiliar;
     private Cadastro cadastro;
     private Relatorio relatorio;
     private Scanner teclado;
-    private String padrao = "(1) - SIM\n(2) - NÃO";
+    private final String fitoreatpico = "FITOTERAPICO";
+    private final String quimioterapico = "QUIMIOTERAPICO";
+    private final String padrao = "(1) - SIM\n(2) - NÃO";
 
     public InterfaceGrafica(){
+        cpfAuxiliar = new CPF("000000000");
         cadastro  = new Cadastro();
         teclado = new Scanner(System.in);
         relatorio = new Relatorio();
@@ -26,8 +30,13 @@ public class InterfaceGrafica {
     }
 
     public void interacao(){
-        System.out.println("==== FARMACIA ==== \n" +
-                " - Escolha uma abaixo:\n" +
+        System.out.println("    ______    ___     ____     __  ___    ___    ______    ____    ___ \n" +
+                "   / ____/   /   |   / __ \\   /  |/  /   /   |  / ____/   /  _/   /   |\n" +
+                "  / /_      / /| |  / /_/ /  / /|_/ /   / /| | / /        / /    / /| |\n" +
+                " / __/     / ___ | / _, _/  / /  / /   / ___ |/ /___    _/ /    / ___ |\n" +
+                "/_/       /_/  |_|/_/ |_|  /_/  /_/   /_/  |_|\\____/   /___/   /_/  |_|\n" +
+                "                                                                               ");
+        System.out.println(" - Escolha uma abaixo:\n" +
                 "(1) Cadastrar usuário\n" +
                 "(2) Cadastrar medicamento\n" +
                 "(3) Venda\n" +
@@ -64,7 +73,7 @@ public class InterfaceGrafica {
         String cpf = teclado.next();
         CPF cpfNovoCliente = new CPF(cpf);
         Cliente auxiliar = cadastro.pesquisaRetornaCliente(cpfNovoCliente);
-        if(!auxiliar.getNome().isEmpty()){
+        if(auxiliar.getIdade() != 0){
             System.out.println("Digite o nome: ");
             String nome = teclado.next();
             System.out.println("Digite a idade: ");
@@ -82,28 +91,42 @@ public class InterfaceGrafica {
         return "CLIENTE JÁ CADASTRADO!";
     }
 
-    private String interacaoMedicamento(){
-        System.out.println("2 - CADASTRAR UM NOVO MEDICAMENTO: \n" +
+    private String interacaoMedicamento() {
+        System.out.println("  __  __   ______   _____    _____    _____              __  __   ______   _   _   _______    ____  \n" +
+                " |  \\/  | |  ____| |  __ \\  |_   _|  / ____|     /\\     |  \\/  | |  ____| | \\ | | |__   __|  / __ \\ \n" +
+                " | \\  / | | |__    | |  | |   | |   | |         /  \\    | \\  / | | |__    |  \\| |    | |    | |  | |\n" +
+                " | |\\/| | |  __|   | |  | |   | |   | |        / /\\ \\   | |\\/| | |  __|   | . ` |    | |    | |  | |\n" +
+                " | |  | | | |____  | |__| |  _| |_  | |____   / ____ \\  | |  | | | |____  | |\\  |    | |    | |__| |\n" +
+                " |_|  |_| |______| |_____/  |_____|  \\_____| /_/    \\_\\ |_|  |_| |______| |_| \\_|    |_|     \\____/ \n" +
+                "                                                                                                    \n" +
                 "Selecione o tipo:\n" +
                 "(1) - Fitoterapico\n" +
                 "(2) - Quimioterapico\n");
         int tipoMedicamento = teclado.nextInt();
-        String fitoreatpico = "FITOTERAPICO";
-        String quimioterapico = "QUIMIOTERAPICO";
-        if(tipoMedicamento == 1)
-            System.out.println("MEDICAMENTO " + fitoreatpico + "\n "+ "Digite o nome: ");
+        if (tipoMedicamento == 1)
+            System.out.println("MEDICAMENTO " + fitoreatpico);
         else
-            System.out.println("MEDICAMENTO: " + quimioterapico + "\n "+ "Digite o nome: ");
+            System.out.println("MEDICAMENTO: " + quimioterapico);
+        return pesquisaMedicamento(tipoMedicamento);
+    }
+
+    private String pesquisaMedicamento(int tipoMedicamento) {
+        System.out.println("Digite o nome: ");
         String nome = teclado.next();
+        Medicamento medicamento = cadastro.pesquisaRetornaMedicamento(nome);
+        if (!medicamento.getNome().equalsIgnoreCase("vazio"))
+            return "MEDICAMENTO JÁ CADASTRADO!";
+        return insereDadosMedicamento(tipoMedicamento, nome);
+    }
+
+    private String insereDadosMedicamento(int tipoMedicamento, String nome){
         System.out.println("Digite o fabricante: ");
         String fabricante = teclado.next();
         System.out.println("Digite o composto principal: ");
         String compostoPrincipal = teclado.next();
         System.out.println("Digite o preço: ");
         double preco = teclado.nextDouble();
-        System.out.println("Medicamento precisa de descrição? \n" +
-                "(1) - SIM\n" +
-                "(2) - NÃO");
+        System.out.println("Medicamento precisa de descrição? \n" + padrao);
         int escolha = teclado.nextInt();
         String descricao = null;
         if(escolha == 1){
@@ -145,11 +168,16 @@ public class InterfaceGrafica {
     private String interacaoVenda() {
         System.out.println("Digite o CPF do cliente: ");
         String cpf = teclado.next();
-        CPF auxiliar = new CPF(cpf);
-        String cpfLimpo = auxiliar.limpaCPF(cpf);
-        Cliente comprador = cadastro.pesquisaRetornaCliente(new CPF(cpfLimpo));
+        boolean statusCPF = cpfAuxiliar.validaCPF(cpf);
+        if(!statusCPF)
+            return "CPF NÃO É VALIDO";
+        Cliente comprador = cadastro.pesquisaRetornaCliente(new CPF(cpf));
         if(comprador.getNome() == null)
             return "CLIENTE NÃO CADASTRADO";
+        return criaListaCompras(comprador);
+    }
+
+    private String criaListaCompras(Cliente comprador) {
         Venda novaVenda = new Venda();
         System.out.println("=== ATENÇÃO ===\n" +
                 "Medicamentos Quimioterápicos precisam de receita para serem vendidos");
@@ -162,13 +190,16 @@ public class InterfaceGrafica {
                 novaVenda.listaCompras(produto);
             else
                 System.out.println("Medicamento inválido");
-            System.out.println("Deseja adicionar mais um produto?\n" +
-                    "(1) - Sim\n" +
-                    "(2) - Não\n");
-           int escolha = teclado.nextInt();
-           if(escolha == 1)
+            System.out.println("Deseja adicionar mais um produto?");
+            System.out.println(padrao);
+            int escolha = teclado.nextInt();
+            if(escolha == 1)
                terminou = true;
         }
+        return listaCompraMedicamentoQuimio(comprador, novaVenda);
+    }
+
+    private String listaCompraMedicamentoQuimio(Cliente comprador, Venda novaVenda){
         List<Medicamento> medicamentosComReceita = novaVenda.medicamentosComReceita();
         if(medicamentosComReceita != null){
             System.out.println("Medicamentos precisam de receita");
@@ -178,13 +209,15 @@ public class InterfaceGrafica {
             if(statusReceita == 2)
                 return "VENDA CANCELADA, CLIENTE NÃO POSSUI RECEITA";
         }
+        return precoCompra(comprador, novaVenda);
+    }
+
+    private String precoCompra(Cliente comprador, Venda novaVenda){
         double total = novaVenda.calculaVenda(comprador.getIdade());
         System.out.println("Total de produtos: " + total);
         if (comprador.getPontos() >= total) {
             System.out.println("CLIENTE: " + comprador.getNome() + " tem " + comprador.getPontos() + " pontos");
-            System.out.println("Deseja pagar com pontos? " +
-                    "(1) - SIM\n" +
-                    "(2) - NÃO");
+            System.out.println("Deseja pagar com pontos? " + "\n" + padrao);
             int escolhePontos = teclado.nextInt();
             if (escolhePontos == 1) {
                 comprador.setPontos(0);
@@ -200,7 +233,12 @@ public class InterfaceGrafica {
     }
 
     private String interacaoRelatorio(){
-        System.out.println("==== RELATORIOS ====\n" +
+        System.out.println("  _____    ______   _                   _______     __    _____    _____    ____     _____ \n" +
+                " |  __ \\  |  ____| | |          /\\     |__   __|   /_/   |  __ \\  |_   _|  / __ \\   / ____|\n" +
+                " | |__) | | |__    | |         /  \\       | |     / _ \\  | |__) |   | |   | |  | | | (___  \n" +
+                " |  _  /  |  __|   | |        / /\\ \\      | |    | | | | |  _  /    | |   | |  | |  \\___ \\ \n" +
+                " | | \\ \\  | |____  | |____   / ____ \\     | |    | |_| | | | \\ \\   _| |_  | |__| |  ____) |\n" +
+                " |_|  \\_\\ |______| |______| /_/    \\_\\    |_|     \\___/  |_|  \\_\\ |_____|  \\____/  |_____/ " +
                 "Escolha uma opção abaixo:\n" +
                 "(1) - Clientes por ordem alfabetica\n" +
                 "(2) - Medicamentos por ordem alfabetica\n" +
@@ -246,14 +284,14 @@ public class InterfaceGrafica {
         for(Cliente cliente: listaCliente){
             System.out.println(cliente.toString());
         }
-        return "FIM LISTA";
+        return "FIM DA LISTA";
     }
 
     private String imprimeRelatorioMedicamento(List<Medicamento> listaMedicamento) {
         for(Medicamento medicamento: listaMedicamento){
             System.out.println(medicamento.toString());
         }
-        return "FIM LISTA";
+        return "FIM DA LISTA";
     }
 
 }

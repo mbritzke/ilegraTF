@@ -13,8 +13,8 @@ public class Cadastro {
     private List<Medicamento> listaMedicamentos;
 
     public Cadastro() {
-        listaClientes = new ArrayList<Cliente>();
-        listaMedicamentos = new ArrayList<Medicamento>();
+        listaClientes = new ArrayList<>();
+        listaMedicamentos = new ArrayList<>();
     }
 
     public boolean cadastroCliente(Cliente novoCliente){
@@ -66,7 +66,7 @@ public class Cadastro {
             if(auxiliar.getNome().equalsIgnoreCase(nome))
                 return auxiliar;
         }
-        return new Medicamento(null, null, null, 0);
+        return new Medicamento("vazio", null, null, 0);
     }
 
     public List<Medicamento> retornaListaMedicamentos(){
